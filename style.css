@@ -12,6 +12,13 @@ body {
     margin-right: auto;
 }
 
+.blue-background {
+    background-color: #1961ff;
+    color: white;
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+}
+
 /*Header Styles*/
 #logo {
     width: 200px;
@@ -36,9 +43,41 @@ li {
 
 img {
     width: 50%;
+    border-radius: 15px;
 }
 
 #hero-section div {
     margin: 0 20px 0 20px;
     text-align: justify;
+}
+
+/*My Projects Section Styles*/
+#my-projects {
+    display: flex;
+    align-items: center;
+    height: 30vh;
+}
+
+#my-projects div {
+    margin-right: 100px;
+}
+
+#my-projects div:not(:first-child) {
+    background-color: #1961ff;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+/*My Skills Section Styles*/
+#my-skills {
+    display: flex;
+    align-items: center;
+}
+
+#my-skills img {
+    height: 50px;
+    width: auto;
+    margin: 20px;
 }
