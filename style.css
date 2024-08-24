@@ -55,7 +55,8 @@ img {
 #my-projects {
     display: flex;
     align-items: center;
-    height: 30vh;
+    justify-content: space-between;
+    margin: 50px 0 50px 0;
 }
 
 #my-projects div {
@@ -64,7 +65,7 @@ img {
 
 #my-projects div:not(:first-child) {
     background-color: #1961ff;
-    padding: 30px;
+    padding: 100px;
     margin: 10px;
     border-radius: 15px;
     color: white;
@@ -74,10 +75,25 @@ img {
 #my-skills {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    height: 30vh;
 }
 
 #my-skills img {
     height: 50px;
     width: auto;
-    margin: 20px;
+    margin: 20px 40px 20px 10px;
+}
+
+#my-skills div {
+    margin-right: 100px;
+}
+
+/*Footer Styles*/
+.heart {
+    color: red;
+}
+
+footer p {
+    text-align: center;
 }
