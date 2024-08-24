@@ -97,3 +97,14 @@ img {
 footer p {
     text-align: center;
 }
+
+/*Contact Page Styles*/
+#contact-body {
+    height: 100vh;
+}
+
+#contact-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
