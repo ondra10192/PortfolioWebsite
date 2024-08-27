@@ -6,7 +6,7 @@ html {
     margin: 0;
 }
 
-body {
+main {
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
@@ -25,9 +25,10 @@ body {
 }
 
 header {
+    width: 80vw;
     display: flex;
     justify-content: space-between;
-    margin: 10px 0 10px 0;
+    margin: 10px auto 10px auto;
 }
 
 li {
@@ -90,6 +91,12 @@ img {
 }
 
 /*Footer Styles*/
+footer {
+    background-color: lightgray;
+    margin: 0;
+    padding: 1px;
+}
+
 .heart {
     color: red;
 }
@@ -99,12 +106,21 @@ footer p {
 }
 
 /*Contact Page Styles*/
-#contact-body {
-    height: 100vh;
-}
 
 #contact-section {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.fa-solid {
+    display: inline;
+    padding: 5px;
+}
+
+.inline {
+    display: inline;
+    padding: 5px;
 }
