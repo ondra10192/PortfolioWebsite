@@ -71,21 +71,17 @@ img {
 
 /*My Projects Section Styles*/
 #my-projects {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 50px 0 50px 0;
+    margin: 80px 0 80px 0;
+    width: 100%;
+    display: flex;
 }
 
 #my-projects h2, h3 {
     text-align: center;
 }
 
-#my-projects div {
-    margin-right: 100px;
-}
-
-#my-projects div:not(:first-child) {
+#my-projects h3 {
     background-color: #1961ff;
     padding: 100px;
     margin: 10px;
@@ -93,12 +89,67 @@ img {
     color: white;
 }
 
+#my-projects div {
+    margin-right: 100px;
+}
+
+.heading {
+    width: 25%;
+}
+
+.projects {
+    width: 75%;
+    display: flex;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1300px) {
+    #my-projects h2, #my-skills h2 {
+        text-align: center;
+    }
+
+    #my-projects, #my-skills {
+        flex-wrap: wrap;
+    }
+
+    #my-projects .projects, #my-skills .projects {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+
+    #my-projects .heading, #my-skills .heading {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #about-me {
+        flex-wrap: wrap;
+    }
+
+    #about-me img {
+        width: 70%;
+        margin: 0 auto;
+        min-width: 200px;
+    }
+
+    #about-me h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
 /*My Skills Section Styles*/
 #my-skills {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 30vh;
+    margin: 80px 0 80px 0;
+
 }
 
 #my-skills img {
