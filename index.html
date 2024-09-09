@@ -19,7 +19,14 @@
                 <a href="contact.html"><li>Contact</li></a>
             </ul>
         </nav>
+        <i class="fa-solid fa-bars" id="event-target"></i>
     </header>
+    <div class="mobile" id="mobile">
+        <a href="#about-me"><li>About Me</li></a>
+        <a href="#my-projects"><li>Projects</li></a>
+        <a href="#my-skills"><li>Skills</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+    </div>
     <main>
         <section id="about-me">
             <img src="./img/v-dzungli.jpg" alt="Photo of me">
@@ -57,5 +64,11 @@
     <footer>
         <p>Made with <span class="heart">♥</span> in České Budějovice</p>
     </footer>
+    <script>
+        let eventTarget = document.getElementById("event-target");
+        eventTarget.addEventListener("click", function() {
+            mobile.style.display = "block";
+        });
+    </script>
 </body>
 </html>
