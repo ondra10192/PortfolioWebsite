@@ -53,7 +53,37 @@ ul a:hover, .mobile a:hover {
     text-underline-offset: 5px;
 }
 
-i.fa-solid.fa-bars {
+header button span {
+    display: block;
+}
+
+#modeSwitch {
+    background-color: black;
+    color: white;
+}
+
+#modeSwitchTwo {
+    background-color: rgb(222, 222, 222);
+    color: black;
+    display: none;
+}
+
+#modeSwitch, #modeSwitchTwo {
+    border: none;
+    border-radius: 5px;
+}
+
+#modeSwitch:hover {
+    background-color: rgb(68, 68, 68);
+    cursor: pointer;
+}
+
+#modeSwitchTwo:hover {
+    background-color: rgb(188, 188, 188);
+    cursor: pointer;
+}
+
+i#eventTargetTwo, i#eventTarget {
     display: none;
     margin: auto 0 auto 0;
     font-size: 30px;
@@ -71,6 +101,18 @@ i.fa-solid.fa-bars {
     padding: 5px 0px;
     color: black;
     text-decoration: none;
+}
+
+#eventTargetTwo {
+    display: none;
+}
+
+nav {
+    display: inline-block;
+}
+
+header div {
+    display: flex;
 }
 
 /*Hero Section Styles*/
@@ -164,12 +206,18 @@ img {
 }
 
 @media only screen and (max-width: 850px) {
-    i.fa-solid.fa-bars {
+    i#eventTarget {
         display: inline;
     }
 
     nav {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    i#eventTarget, i#eventTargetTwo {
+        display: none !important;
     }
 }
 

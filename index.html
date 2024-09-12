@@ -11,15 +11,20 @@
 <body>
     <header>
         <a href="index.html"><img src="./img/logo-ob.png" alt="My name" id="logo"></a>
-        <nav>
-            <ul>
-                <a href="#about-me"><li>About Me</li></a>
-                <a href="#my-projects"><li>Projects</li></a>
-                <a href="#my-skills"><li>Skills</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-            </ul>
-        </nav>
-        <i class="fa-solid fa-bars" id="event-target"></i>
+        <div>
+            <button id="modeSwitch">Dark<span>Mode</span></button>
+            <button id="modeSwitchTwo">Light<span>Mode</span></button>
+            <nav>
+                <ul>
+                    <a href="#about-me"><li>About Me</li></a>
+                    <a href="#my-projects"><li>Projects</li></a>
+                    <a href="#my-skills"><li>Skills</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars" id="eventTarget"></i>
+            <i class="fa-solid fa-bars" id="eventTargetTwo"></i>
+        </div>
     </header>
     <div class="mobile" id="mobile">
         <a href="#about-me"><li>About Me</li></a>
@@ -65,9 +70,23 @@
         <p>Made with <span class="heart">♥</span> in České Budějovice</p>
     </footer>
     <script>
-        let eventTarget = document.getElementById("event-target");
+        let eventTarget = document.getElementById("eventTarget");
         eventTarget.addEventListener("click", function() {
             mobile.style.display = "block";
+            eventTargetTwo.style.display = "block";
+            eventTarget.style.display = "none";
+        });
+        let eventTargetTwo = document.getElementById("eventTargetTwo");
+        eventTargetTwo.addEventListener("click", function() {
+            mobile.style.display = "none";
+            eventTarget.style.display = "block";
+            eventTargetTwo.style.display = "none";
+        });
+
+        let eventTargetMode = document.getElementById("modeSwitch");
+        eventTargetMode.addEventListener("click", function() {
+            html.style.backgroundColor = "black";
+            html.style.color = "white";
         });
     </script>
 </body>
