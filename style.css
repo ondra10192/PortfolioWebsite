@@ -57,36 +57,33 @@ header button span {
     display: block;
 }
 
-#modeSwitch {
-    background-color: black;
-    color: white;
-}
-
-#modeSwitchTwo {
-    background-color: rgb(222, 222, 222);
-    color: black;
-    display: none;
-}
 
 #modeSwitch, #modeSwitchTwo {
-    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
     border-radius: 5px;
 }
 
-#modeSwitch:hover {
+#modeSwitchTwo {
+    display: none;
+}
+
+#modeSwitch:hover, #modeSwitchTwo:hover {
     background-color: rgb(68, 68, 68);
     cursor: pointer;
 }
 
-#modeSwitchTwo:hover {
-    background-color: rgb(188, 188, 188);
-    cursor: pointer;
-}
 
 i#eventTargetTwo, i#eventTarget {
     display: none;
     margin: auto 0 auto 0;
     font-size: 30px;
+    color: black;
+}
+
+i#eventTargetTwo:hover, i#eventTarget:hover {
+    cursor: pointer;
 }
 
 .mobile {
@@ -253,6 +250,7 @@ footer {
 
 footer p {
     text-align: center;
+    color: black;
 }
 
 /*Contact Page Styles*/

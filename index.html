@@ -85,8 +85,28 @@
 
         let eventTargetMode = document.getElementById("modeSwitch");
         eventTargetMode.addEventListener("click", function() {
-            html.style.backgroundColor = "black";
-            html.style.color = "white";
+            let body = document.querySelector("body");
+            let header = document.querySelector("header")
+            body.style.backgroundColor = "black";
+            body.style.color = "white";
+            header.style.backgroundColor = "white";
+            header.style.padding = "5px";
+            header.style.borderRadius = "5px";
+            modeSwitch.style.display = "none";
+            modeSwitchTwo.style.display = "block";
+        });
+
+        let eventTargetModeTwo = document.getElementById("modeSwitchTwo");
+        eventTargetModeTwo.addEventListener("click", function() {
+            let body = document.querySelector("body");
+            let header = document.querySelector("header")
+            body.style.backgroundColor = "white";
+            body.style.color = "black";
+            header.style.backgroundColor = "none";
+            header.style.padding = "none";
+            header.style.borderRadius = "none";
+            modeSwitch.style.display = "block";
+            modeSwitchTwo.style.display = "none";
         });
     </script>
 </body>
